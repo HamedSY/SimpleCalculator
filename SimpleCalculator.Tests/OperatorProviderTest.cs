@@ -1,3 +1,4 @@
+using NSubstitute;
 using SimpleCalculator.Business.Enums;
 using SimpleCalculator.Business.OperatorBusiness;
 using SimpleCalculator.Business.OperatorBusiness.Operators;
@@ -22,4 +23,6 @@ public class OperatorProviderTest
         // Assert
         Assert.Equal(type, result.GetType());
     }
+
+    //TODO Write a test for OperatorProvider when throws exception
 }
