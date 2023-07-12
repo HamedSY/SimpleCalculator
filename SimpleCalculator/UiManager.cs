@@ -7,10 +7,10 @@ namespace SimpleCalculator.ConsoleApp
     {
         private static readonly Dictionary<string, OperatorEnum> s_operatorSigns = new()
         {
-            {"+", OperatorEnum.sum },
-            {"-", OperatorEnum.sub },
-            {"*", OperatorEnum.multiply },
-            {"/", OperatorEnum.division }
+            {"+", OperatorEnum.Sum },
+            {"-", OperatorEnum.Sub },
+            {"*", OperatorEnum.Multiply },
+            {"/", OperatorEnum.Division }
         };
 
         private readonly Calculator _calculator;

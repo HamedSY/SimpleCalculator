@@ -10,10 +10,10 @@ namespace SimpleCalculator.Business.OperatorBusiness
         {
             return operatorType switch
             {
-                OperatorEnum.sum => new SumOperator(),
-                OperatorEnum.sub => new SubOperator(),
-                OperatorEnum.multiply => new MultiplyOperator(),
-                OperatorEnum.division => new DivisionOperator(),
+                OperatorEnum.Sum => new SumOperator(),
+                OperatorEnum.Sub => new SubOperator(),
+                OperatorEnum.Multiply => new MultiplyOperator(),
+                OperatorEnum.Division => new DivisionOperator(),
                 _ => throw new NotSupportedException(),
             };
         }

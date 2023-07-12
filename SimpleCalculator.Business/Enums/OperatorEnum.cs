@@ -2,9 +2,9 @@
 {
     public enum OperatorEnum
     {
-        sum,
-        sub,
-        multiply,
-        division
+        Sum,
+        Sub,
+        Multiply,
+        Division
     }
 }
