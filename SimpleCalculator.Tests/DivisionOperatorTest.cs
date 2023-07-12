@@ -11,7 +11,7 @@ public class DivisionOperatorTest
     [InlineData(3, 15, 5)]
     [InlineData(4, 16, 4)]
     [InlineData(10, 20, 2)]
-    public void CalculateDivisionOperator_ShouldReturnTheCorrectResult_WhenTheDivisorIsNotZero(
+    public void DivisionOperator_WhenTheDivisorIsNotZero(
         int expectedResult, int dividend, int divisor)
     {
         // Arrange
@@ -25,7 +25,7 @@ public class DivisionOperatorTest
     }
     
     [Fact]
-    public void CalculateDivisionOperator_ShouldReturnTheCorrectResult_WhenTheDivisorIsZero()
+    public void DivisionOperator_WhenTheDivisorIsZero()
     {
         // Arrange
         var dividend = Arg.Any<int>();
