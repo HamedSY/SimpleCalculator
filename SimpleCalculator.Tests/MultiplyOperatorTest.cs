@@ -7,8 +7,8 @@ public class MultiplyOperatorTest
 {
     [Theory]
     [InlineData(12, 3, 4)]
-    [InlineData(72, 9, 8)]
-    [InlineData(9, 3, 3)]
+    [InlineData(72, -9, -8)]
+    [InlineData(-9, -3, 3)]
     [InlineData(100000, 10, 10000)]
     public void MultiplyOperator_TypicalMult(int expectedResult, int multiplier, int multiplicand)
     {

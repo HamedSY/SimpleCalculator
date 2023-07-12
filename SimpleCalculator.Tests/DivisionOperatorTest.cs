@@ -8,8 +8,8 @@ public class DivisionOperatorTest
 {
     [Theory]
     [InlineData(2, 10, 5)]
-    [InlineData(3, 15, 5)]
-    [InlineData(4, 16, 4)]
+    [InlineData(-3, -15, 5)]
+    [InlineData(4, -16, -4)]
     [InlineData(10, 20, 2)]
     public void DivisionOperator_WhenTheDivisorIsNotZero(
         int expectedResult, int dividend, int divisor)

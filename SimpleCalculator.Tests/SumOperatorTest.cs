@@ -9,6 +9,7 @@ public class SumOperatorTest
     [InlineData(7, 3, 4)]
     [InlineData(9, 1, 8)]
     [InlineData(781, 699, 82)]
+    [InlineData(-10, 25, -35)]
     public void SumOperator_TypicalSum(int expectedResult, int addend1, int addend2)
     {
         // Arrange
