@@ -26,12 +26,12 @@ public class MultiplyOperatorTest
     public void MultiplyOperator_MultiplyByOne_ExceptZero()
     {
         // Arrange
-        var multiplier = 1;
+        const int one = 1;
         var multiplicand = Arg.Is<int>(x => x != 0);
         var multiplyOperator = new MultiplyOperator();
 
         // Act
-        var result = multiplyOperator.Calculate(multiplier, multiplicand);
+        var result = multiplyOperator.Calculate(one, multiplicand);
 
         // Assert
         Assert.Equal(multiplicand, result);
@@ -41,12 +41,12 @@ public class MultiplyOperatorTest
     public void MultiplyOperator_MultiplyByZero()
     {
         // Arrange
-        var multiplier = 0;
+        const int zero = 0;
         var multiplicand = Arg.Any<int>();
         var multiplyOperator = new MultiplyOperator();
 
         // Act
-        var result = multiplyOperator.Calculate(multiplier, multiplicand);
+        var result = multiplyOperator.Calculate(zero, multiplicand);
 
         // Assert
         Assert.Equal(0, result);

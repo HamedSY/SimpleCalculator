@@ -29,10 +29,10 @@ public class DivisionOperatorTest
     {
         // Arrange
         var dividend = Arg.Any<int>();
-        var divisor = 0;
+        const int zero = 0;
         var divisionOperator = new DivisionOperator();
 
         // Act & Assert
-        Assert.Throws<DivideByZeroException>(() => divisionOperator.Calculate(dividend, divisor));
+        Assert.Throws<DivideByZeroException>(() => divisionOperator.Calculate(dividend, zero));
     }
 }
