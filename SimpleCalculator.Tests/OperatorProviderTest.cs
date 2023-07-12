@@ -25,4 +25,14 @@ public class OperatorProviderTest
     }
 
     //TODO Write a test for OperatorProvider when throws exception
+    [Fact]
+    public void OperatorProvider_ThrowsException()
+    {
+        // Arrange
+        var operatorProvider = new OperatorProvider();
+        const int invalidEnumValue = 4;
+        
+        // Act & Assert
+        Assert.Throws<NotSupportedException>(() => operatorProvider.GetOperator((OperatorEnum)invalidEnumValue));
+    }
 }
